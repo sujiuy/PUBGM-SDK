@@ -6,3 +6,10 @@ ULONG64 GetGames(ULONG64 Names) {
 	if (ValidPtr(name)) return 0;
 	return Mem->Read<uint64_t>(name + Index * 0x10);
 }
+
+
+/*
+Gname = GetGames(LibUE4.so + GNames);
+
+
+*/
